@@ -71,7 +71,7 @@ We can load data into R using the following lines of code. The path to an altern
 ####################################################################################################
 DNA.mat.path <- "./DNAme.mat.RRBS-SE.tsv"
 Samples.metadata.path <- "./Samples.metadata.RRBS-SE.tsv"
-Sample_id.column <- "Sample_id" ## Look at the following section where matrix containing sample metadata shows the column is named like this.
+Sample_id.column <- "Participant_id_anonymous" ## Look at the following section where matrix containing sample metadata shows the column is named like this.
 ####################################################################################################
 
 ## LOAD DNA methylation data

@@ -52,8 +52,7 @@ library(data.table)
 download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/data/Estimate.epiCMIT.RData", destfile = "Estimate.epiCMIT.RData", method="libcurl")
 load("Estimate.epiCMIT.RData")
 
-## Take a look at RRBS data. Please, note that your data can be a matrix, data.frame or GRange object.
-print(RRBS.SE.hg19.Examples$CW101)
+
 
 ```
 

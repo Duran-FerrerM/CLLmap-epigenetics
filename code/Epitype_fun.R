@@ -18,8 +18,8 @@ cluster.meth.diff <- function(DNAme.mat=NULL,
   
   if(!is.null(IGHV_identity.column)){
     message("[cluster.meth.diff] Performing differential analyses.")
-    UCLLs <- Samples.metadata$Sample_id[which(Samples.metadata[,IGHV_identity.column]>=UCLL.cutoff)]
-    MCLLs <- Samples.metadata$Sample_id[which(Samples.metadata[,IGHV_identity.column]<=MCLL.cutoff)]
+    UCLLs <- Samples.metadata[[Sample_id.column]][which(Samples.metadata[,IGHV_identity.column]>=UCLL.cutoff)]
+    MCLLs <- Samples.metadata[[Sample_id.column]][which(Samples.metadata[,IGHV_identity.column]<=MCLL.cutoff)]
     Groups <- factor(c(rep("UCLLs",length(UCLLs)),
                        rep("MCLLs",length(MCLLs))),levels = c("UCLLs","MCLLs")
     )
