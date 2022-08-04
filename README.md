@@ -27,7 +27,7 @@ The CLL epitypes can be further delineated by their proliferative histories meas
 LICENSE terms for epitype predictions and epiCMIT can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/LICENSE)
 
 ## Citation
-If you use any data or code derived from this study, please cite: *Knisbacher, Lin, Hahn, Nadeu, Duran-Ferrer et al. Molecular map of chronic lymphocytic leukemia and its impact on outcome, Nat. Genet, 2022, accepted*.
+If you use any data or code derived from this study, please cite: *Knisbacher, Lin, Hahn, Nadeu, Duran-Ferrer et al. Molecular map of chronic lymphocytic leukemia and its impact on outcome, Nat. Genet, 2022.
 
 ## Contact
 If you have any question, comment or suggestions please contact me at: *maduran@clinic.cat* :-)
