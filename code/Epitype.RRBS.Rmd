@@ -3,8 +3,8 @@ title: "CLL epitype assignament in RRBS DNA methylation data."
 author: 
   - name: "Martí Duran-Ferrer, PhD"
     affiliation: "Institut d'Investigacions Biomèdiques Augusti Pi i Sunyer (IDIBAPS), Barcelona, Spain."
-    email: "maduran@clinic.cat"
-date: "18/01/2022"
+    email: "maduran@recerca.clinic.cat"
+date: "05/08/2022"
 output: 
     BiocStyle::html_document:
       toc: true

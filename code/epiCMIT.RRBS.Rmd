@@ -3,8 +3,8 @@ title: "epiCMIT mitotic clock estimation in NGS DNA methylation data."
 author: 
   - name: "Martí Duran-Ferrer, PhD"
     affiliation: "Institut d'Investigacions Biomèdiques Augusti Pi i Sunyer (IDIBAPS), Barcelona, Spain."
-    email: "maduran@clinic.cat"
-date: "12/01/2022"
+    email: "maduran@recerca.clinic.cat"
+date: "05/08/2022"
 output: 
     BiocStyle::html_document:
       toc: true
@@ -28,7 +28,7 @@ The epiCMIT mitotic clock, from Strati, P., Green, M.R. A, Nat Cancer, 2020.
 
 Here, I provide the necessary steps to calculate the epiCMIT in NGS DNA methylation data. Like in the [original strategy](https://duran-ferrerm.github.io/Pan-B-cell-methylome/Estimate.epiCMIT.html), the epiCMIT is built considering the highest score from their two underlying hyper- and hypomethylation-based mitotic clocks, called epiCMIT-hyper and the epiCMIT-hypo, respectively. Please, note that the epiCMIT should always be analyzed together with the CLL epitypes (or at least with IGHV status), as the total proliferative history is dependent on the CLL cellular origin, with n-CLL/unmutated CLL showing lower baseline epiCMIT compared to m-CLL/mutated CLLs.
 
-The validity of the NGS-based epiCMIT mitotic score has been validated in the CLL 1100 study (*Knisbacher, Lin, Hahn, Nadeu, Duran-Ferrer et al, Nat. Genet 2022,accepted*) and can be summarized in the following figure. Briefly, the new NGS-based epiCMIT estimation is strongly correlated (*R*=0.94, *P*=4.5e-12) with the original methodology in [Duran-Ferrer 2020](https://www.nature.com/articles/s43018-020-00131-2) (panel a). This new NGS-based epiCMIT was compared in paired samples profiled with different platforms , including 450k Illumina array data, RRBS-SE and RRBS-PE data. Next, unsupervised principal component analysis (PCA) shows similar epiCMIT gradients irrespective of the number and identity of the epiCMIT-CpGs used, cohort compositions and batches, further supporting its robustness (panel b). Finally and most importantly, the epiCMIT is the one of the most important -and the only- continuous variable predicting clinical outcome in CLL in a multi-omic clincal data modelling (panel c). As the range in epiCMIT is 0.19-0.84, this implies that a n-CLL patient with an epiCMIT=0.84 shows 6.2 times higher risk of dying compared to a n-CLL patient with 0.19 [ (0.84/0.19)*1.4 . The hazard ratio for each 0.1 epiCMIT increments is 1.4 in the multi-omic clinical data modelling reported in the CLL1100 study].
+The validity of the NGS-based epiCMIT mitotic score has been validated in the CLL 1100 study (*Knisbacher, Lin, Hahn, Nadeu, Duran-Ferrer et al, Nat. Genet 2022,accepted*) and can be summarized in the following figure. Briefly, the new NGS-based epiCMIT estimation is strongly correlated (*R*=0.94, *P*=4.5e-12) with the original methodology in [Duran-Ferrer 2020](https://www.nature.com/articles/s43018-020-00131-2) (panel a). This new NGS-based epiCMIT was compared in paired samples profiled with different platforms , including 450k Illumina array data, RRBS-SE and RRBS-PE data. Next, unsupervised principal component analysis (PCA) shows similar epiCMIT gradients irrespective of the number and identity of the epiCMIT-CpGs used, cohort compositions and batches, further supporting its robustness (panel b). Finally and most importantly, the epiCMIT is the one of the most important -and the only- continuous variable predicting clinical outcome in CLL in a multi-omic clincal data modelling (panel c). As the range in epiCMIT is 0.19-0.84, this implies that a n-CLL patient with an epiCMIT of 0.84 shows 6.2 times higher risk of dying compared to a n-CLL patient with 0.19, as the hazard ratio for each 0.1 epiCMIT increments is 1.4 in the multi-omic clinical data modelling reported in the CLL1100 study.
 
 ![](../images/epiCMIT_CLL1100.png)
 
